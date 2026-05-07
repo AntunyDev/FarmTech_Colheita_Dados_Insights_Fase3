@@ -49,7 +49,7 @@ pbl/
 A conexão com o banco de dados Oracle foi estabelecida com sucesso através do Oracle SQL Developer, permitindo o gerenciamento e a criação do nosso schema.
 
 📸 **Conexão ao Banco de Dados**
-![Conexão Banco de Dados](prints/conexao_banco_dados_sql_oracle_developer.png)
+![Conexão Banco de Dados](meugit/cursotiao/pbl/fase3/prints/conexao_banco_dados_sql_oracle_developer.png)
 
 ---
 
@@ -58,10 +58,10 @@ A conexão com o banco de dados Oracle foi estabelecida com sucesso através do 
 Os dados foram importados a partir do arquivo CSV gerado na Fase 2, contendo os registros de nossos sensores agrícolas simulados.
 
 📸 **Importação de Dados Concluída com Sucesso**
-![Importação dados com sucesso](prints/importacao_dados_com_sucesso.png)
+![Importação dados com sucesso](meugit/cursotiao/pbl/fase3/prints/importacao_dados_com_sucesso.png)
 
 📸 **Amostragem dos Dados Importados**
-![Amostragem dados importados](prints/amostragem_dados_sensores_importados.png)
+![Amostragem dados importados](meugit/cursotiao/pbl/fase3/prints/amostragem_dados_sensores_importados.png)
 
 ---
 
@@ -72,22 +72,22 @@ A tabela `sensores` foi criada inicialmente. Durante o processo, identificamos a
 Para garantir maior precisão nos registros de acidez do solo, foi realizado um processo de migração da coluna de pH de inteiro para decimal (`NUMBER(4,2)`):
 
 1. **Criação da nova coluna decimal:**
-![Criação nova coluna pH decimal](prints/criacao_nova_coluna_ph_decimal.png)
+![Criação nova coluna pH decimal](meugit/cursotiao/pbl/fase3/prints/criacao_nova_coluna_ph_decimal.png)
 
 2. **Conversão e cópia dos valores da coluna antiga para a nova:**
-![Conversão valores nova coluna pH decimal](prints/conversao_valores_nova_coluna_ph_decimal.png)
+![Conversão valores nova coluna pH decimal](meugit/cursotiao/pbl/fase3/prints/conversao_valores_nova_coluna_ph_decimal.png)
 
 3. **Conferência dos valores atualizados:**
-![Conferência valores pH decimal](prints/confericao_valores_ph_decimal.png)
+![Conferência valores pH decimal](meugit/cursotiao/pbl/fase3/prints/confericao_valores_ph_decimal.png)
 
 4. **Exclusão da coluna antiga (inteiro):**
-![Exclusão coluna pH inteiro](prints/exclusao_coluna_ph_inteiro.png)
+![Exclusão coluna pH inteiro](meugit/cursotiao/pbl/fase3/prints/exclusao_coluna_ph_inteiro.png)
 
 5. **Renomeação da nova coluna para o nome original (`ph`):**
-![Renomeação pH decimal](prints/renomeacao_ph_decimal.png)
+![Renomeação pH decimal](meugit/cursotiao/pbl/fase3/prints/renomeacao_ph_decimal.png)
 
 6. **Efetivação das alterações (Commit):**
-![Commit pH decimal](prints/commit_ph_decimal.png)
+![Commit pH decimal](meugit/cursotiao/pbl/fase3/prints/commit_ph_decimal.png)
 
 
 ## 🔍 Consultas SQL Realizadas (Insights)
@@ -96,43 +96,43 @@ Abaixo estão listadas as consultas realizadas no banco de dados para a obtenç�
 
 ### 1. Consulta Básica Geral
 Retorna todos os registros da tabela `sensores`, permitindo verificar a integridade geral dos dados.
-![Consulta Básica Geral](prints/consulta_basica_geral.png)
+![Consulta Básica Geral](meugit/cursotiao/pbl/fase3/prints/consulta_basica_geral.png)
 
 ### 2. Média das Variáveis
 Analisa as médias gerais de umidade, pH e precipitação.
-![Consulta Média Variáveis](prints/consulta_media_variaveis.png)
+![Consulta Média Variáveis](meugit/cursotiao/pbl/fase3/prints/consulta_media_variaveis.png)
 
 ### 3. Média de Irrigação por Umidade
 Avalia a relação entre o nível de umidade do solo e o acionamento médio do sistema de irrigação.
-![Média Irrigação por Umidade](prints/media_irrigacao_por_umidade.png)
+![Média Irrigação por Umidade](meugit/cursotiao/pbl/fase3/prints/media_irrigacao_por_umidade.png)
 
 ### 4. Relação Irrigação vs Precipitação
 Compara os dados de chuva (precipitação) com a ativação da irrigação, mostrando se a precipitação natural foi suficiente ou se precisou de irrigação artificial.
-![Irrigação x Precipitação](prints/consulta_irrigacao_x_precipitacao.png)
+![Irrigação x Precipitação](meugit/cursotiao/pbl/fase3/prints/consulta_irrigacao_x_precipitacao.png)
 
 ### 5. Casos Críticos (Baixa Umidade)
 Identifica situações críticas onde a umidade está muito baixa, exigindo atuação severa do sistema de irrigação.
-![Consulta Baixa Umidade](prints/consulta_baixa_umidade_casos_criticos.png)
+![Consulta Baixa Umidade](meugit/cursotiao/pbl/fase3/prints/consulta_baixa_umidade_casos_criticos.png)
 
 ### 6. Registros que Necessitam de Irrigação
 Contabiliza e filtra quantos registros específicos demandaram a ativação do sistema de irrigação (`irrigacao = 1`).
-![Registros necessitam irrigação](prints/consulta_quantos_registros_necessitam_irrigacao.png)
+![Registros necessitam irrigação](meugit/cursotiao/pbl/fase3/prints/consulta_quantos_registros_necessitam_irrigacao.png)
 
 ### 7. Solos com Nível de Acidez Elevado (Solo Ácido)
 Filtra os sensores onde o pH apresentou características de alta acidez, o que pode requerer correção (calagem).
-![Consulta Solo Ácido](prints/consulta_solo_acido.png)
+![Consulta Solo Ácido](meugit/cursotiao/pbl/fase3/prints/consulta_solo_acido.png)
 
 ### 8. Solos com Todos os Nutrientes (N, P, K)
 Busca por amostras ideais de solo, onde a presença de Nitrogênio (N), Fósforo (P) e Potássio (K) é satisfatória.
-![Solo com todos nutrientes](prints/consulta_solo_com_todos_nutrientes.png)
+![Solo com todos nutrientes](meugit/cursotiao/pbl/fase3/prints/consulta_solo_com_todos_nutrientes.png)
 
 ### 9. Top 5 Maiores Precipitações
 Lista os 5 registros com o maior volume de chuva (precipitação) identificado pelos sensores.
-![Top 5 Maiores Precipitações](prints/top_5_maiores_precipitacoes.png)
+![Top 5 Maiores Precipitações](meugit/cursotiao/pbl/fase3/prints/top_5_maiores_precipitacoes.png)
 
 ### 10. Consulta de Dados Equilibrados
 Identifica amostras onde o solo se encontra em condições ideais e equilibradas, com boa umidade, pH neutro e nutrientes presentes, dispensando a necessidade de irrigação.
-![Consulta Dados Equilibrados](prints/consulta_dados_equilibrados.png)
+![Consulta Dados Equilibrados](meugit/cursotiao/pbl/fase3/prints/consulta_dados_equilibrados.png)
 
 ---
 
