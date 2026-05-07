@@ -12,8 +12,11 @@ Nesta fase, os dados coletados pelos sensores agrícolas da Fase 2 foram carrega
 
 | Nome | RM |
 |---|---|
-| Nome do integrante 1 | RM00000 |
-| Nome do integrante 2 | RM00000 |
+| Antuny Marques | RM573852 |
+| Tiago Gonçalves | RM570935 |
+| Carlos Ribeiro | RM571449 |
+| Lucas Ribeiro | RM572508 |
+| Anderson Sapucaia | RM571668 |
 
 ---
 
@@ -48,6 +51,20 @@ A conexão com o banco de dados Oracle foi estabelecida com sucesso através do 
 📸 **Conexão ao Banco de Dados**
 ![Conexão Banco de Dados](prints/conexao_banco_dados_sql_oracle_developer.png)
 
+---
+
+## 📥 Importação dos Dados
+
+Os dados foram importados a partir do arquivo CSV gerado na Fase 2, contendo os registros de nossos sensores agrícolas simulados.
+
+📸 **Importação de Dados Concluída com Sucesso**
+![Importação dados com sucesso](prints/importacao_dados_com_sucesso.png)
+
+📸 **Amostragem dos Dados Importados**
+![Amostragem dados importados](prints/amostragem_dados_sensores_importados.png)
+
+---
+
 A tabela `sensores` foi criada inicialmente. Durante o processo, identificamos a necessidade de refinar o tipo de dado do pH.
 
 ### ⚙️ Ajustes na Tabela (Tratamento da coluna pH)
@@ -72,19 +89,6 @@ Para garantir maior precisão nos registros de acidez do solo, foi realizado um 
 6. **Efetivação das alterações (Commit):**
 ![Commit pH decimal](prints/commit_ph_decimal.png)
 
----
-
-## 📥 Importação dos Dados
-
-Os dados foram importados a partir do arquivo CSV gerado na Fase 2, contendo os registros de nossos sensores agrícolas simulados.
-
-📸 **Importação de Dados Concluída com Sucesso**
-![Importação dados com sucesso](prints/importacao_dados_com_sucesso.png)
-
-📸 **Amostragem dos Dados Importados**
-![Amostragem dados importados](prints/amostragem_dados_sensores_importados.png)
-
----
 
 ## 🔍 Consultas SQL Realizadas (Insights)
 
