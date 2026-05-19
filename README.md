@@ -33,7 +33,7 @@ meugit/cursotiao/pbl/fase3/
 │   └── prints/
 │       └── (19 capturas de tela)
 └── Cap_10/
-    ├── Antuny_RM573852_fase3_cap10.ipynb
+    ├── AntunyMarques_RM573852_fase3_cap1.ipynb
     ├── produtos_agricolas.csv
     └── README.md
 ```
@@ -57,9 +57,13 @@ A conexão com o banco de dados Oracle foi estabelecida com sucesso através do 
 
 ---
 
-## 📥 Importação dos Dados
+## 📥 Importação e Origem dos Dados (Fase 2)
 
-Os dados foram importados a partir do arquivo CSV gerado na Fase 2, contendo os registros de nossos sensores agrícolas simulados.
+Os dados utilizados nesta Fase 3 foram originalmente simulados e coletados pelos sensores desenvolvidos na Fase 2. Toda a lógica de simulação física e os códigos-fonte em Python e C/C++ (para microcontroladores IoT/Arduino) estão documentados e hospedados no repositório oficial anterior:
+
+🔗 **[Repositório FarmTech - Cana (Fase 2)](https://github.com/lstrefezza/1TIAOA-2026-fase2-cap1)**
+
+O arquivo resultante dessa coleta, contendo 40 registros detalhados das variáveis de solo (umidade, pH, NPK, precipitação e status de irrigação), foi exportado como `base_dados.csv` e serviu como base de dados para a importação e modelagem no banco de dados Oracle nesta Fase 3. Como ponte de referência, o arquivo [codigo_usado.py](meugit/cursotiao/pbl/fase3/Cap_01/consultas/codigo_usado.py) aponta diretamente para essa origem.
 
 📸 **Importação de Dados Concluída com Sucesso**
 ![Importação dados com sucesso](meugit/cursotiao/pbl/fase3/Cap_01/prints/importacao_dados_com_sucesso.png)
