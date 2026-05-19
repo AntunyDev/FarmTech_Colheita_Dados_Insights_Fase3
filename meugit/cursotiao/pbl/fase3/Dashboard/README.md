@@ -99,7 +99,7 @@ http://localhost:8501
 
 ## 🎥 Vídeo Demonstrativo
 
-📺 **[Link para o vídeo no YouTube](https://youtube.com/seu-link-aqui)**
+📺 **[Link para o vídeo no YouTube](https://youtu.be/ykjto4zIzus)**
 > O vídeo de até 5 minutos demonstra os gráficos em ação, a interatividade dos filtros da tabela e a explicação técnica detalhada sobre como os dados da Fase 2 de IoT foram integrados e tratados.
 
 ---
